@@ -3,8 +3,10 @@
 @section('content')
     <div class="container">
         <div class="row">
-            @foreach($post in $posts)
-                {{$post->message}}
+            @foreach($feed as $post)
+                <div class="message">
+                    {{$post->message}}
+                </div>
             @endforeach
         </div>
     </div>

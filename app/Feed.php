@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Feed extends Model
 {
+    protected $table = 'feed';
     /**
      * The attributes that are mass assignable.
      *

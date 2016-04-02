@@ -5,10 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use App\Feed;
 
 class FeedController extends Controller
 {
-<<<<<<< HEAD
 
     function __construct()
     {
@@ -28,15 +28,14 @@ class FeedController extends Controller
     public function delete(){
 
     }
-    public function create(){
-
-=======
-    //
-
-    public function index()
+    public function create()
     {
 
-        return view('index');
->>>>>>> 1ad061090c0cfbde276a90190a78c5876fa7684e
+        //
+    }
+    public function index()
+    {
+        $feed = Feed::all();
+        return view('feed.index', ['feed' => $feed]);
     }
 }

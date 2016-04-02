@@ -19,3 +19,11 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+$factory->define(App\Feed::class, function (Faker\Generator $faker) {
+    return [
+      'tag' => $faker->realText($faker->numberBetween(5-10)),
+      'message' => $faker->realText($faker->numberBetween(5-10)),
+    ];
+});
+

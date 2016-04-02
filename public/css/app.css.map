@@ -1,0 +1,1 @@
+{"version":3,"sources":["jake.scss","app.scss"],"names":[],"mappings":"AAAA;EACE,wBAAwB,EACzB;;ACED;EACE,wBAAwB,EACzB","file":"app.css","sourcesContent":[".message {\n  border: 1px solid black;\n}","// @import \"node_modules/bootstrap-sass/assets/stylesheets/bootstrap\";\n\n@import \"jake.scss\";\n\n.message {\n  border: 1px solid black;\n}"],"sourceRoot":"/source/"}
