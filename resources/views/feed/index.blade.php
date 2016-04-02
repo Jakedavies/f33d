@@ -2,9 +2,9 @@
 
 @section('content')
     <div class="container">
-        <div class="row">
+        <div class="row post-container">
             @foreach($feed as $post)
-                <div class="message">
+                <div class="post" data-timestamp="{{$post->created_at}}">
                     {{$post->message}}
                 </div>
             @endforeach
