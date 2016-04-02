@@ -13,15 +13,13 @@ class FeedController extends Controller
 
     function __construct()
     {
-        $this->middleware('auth', ['only' => 'create', 'store', 'edit', 'update', 'delete']);
+        $this->middleware('auth', ['only' => 'make', 'create', 'store', 'edit', 'update', 'delete']);
     }
 
     public function show(){
 
     }
-    public function edit(){
 
-    }
     //Better naming would be a good thing here
     public function make(){
         $post = new Feed();
