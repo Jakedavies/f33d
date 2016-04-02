@@ -28,5 +28,7 @@ Route::post('auth/register', 'Auth\AuthController@postRegister');
 Route::auth();
 
 Route::get('/feed', 'FeedController@index');
+Route::get('/feed/create', 'FeedController@make');
+
 
 Route::get('/home', 'HomeController@index');
