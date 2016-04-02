@@ -6,7 +6,13 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-class feed extends Controller
+class FeedController extends Controller
 {
     //
+
+    public function index()
+    {
+
+        return view('index');
+    }
 }
