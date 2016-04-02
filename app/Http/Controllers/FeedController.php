@@ -22,7 +22,7 @@ class feed extends Controller
     }
     //Better naming would be a good thing here
     public function make(){
-        return view('home');
+        return view('feed.createFeedPost');
     }
     public function delete(){
 
