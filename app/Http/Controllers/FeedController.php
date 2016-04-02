@@ -8,6 +8,12 @@ use App\Http\Requests;
 
 class feed extends Controller
 {
+
+    function __construct()
+    {
+        $this->middleware('auth', ['only' => 'create', 'store', 'edit', 'update', 'delete']);
+    }
+
     public function show(){
 
     }
@@ -16,7 +22,7 @@ class feed extends Controller
     }
     //Better naming would be a good thing here
     public function make(){
-
+        return view('home');
     }
     public function delete(){
 
