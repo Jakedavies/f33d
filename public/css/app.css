@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .message {
   border: 1px solid black;
   border-radius: 5px;
@@ -8,5 +9,10 @@
 
 .message {
   border: 1px solid black; }
+=======
+.post {
+  border: 1px solid grey;
+  padding: 15px; }
+>>>>>>> 0dbd4464766a2e3a27a6dd3245de214dee2ce910
 
 /*# sourceMappingURL=app.css.map */

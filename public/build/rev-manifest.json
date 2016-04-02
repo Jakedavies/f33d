@@ -1,3 +1,8 @@
 {
+<<<<<<< HEAD
   "css/app.css": "css/app-694efd9632.css"
+=======
+  "css/app.css": "css/app-94d0dd1d1f.css",
+  "js/main.js": "js/main-ef08895079.js"
+>>>>>>> 0dbd4464766a2e3a27a6dd3245de214dee2ce910
 }

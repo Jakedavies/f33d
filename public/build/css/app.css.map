@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"version":3,"sources":["jake.scss","app.scss"],"names":[],"mappings":"AAAA;EACE,wBAAwB;EACxB,mBAAmB;EACnB,cAAc;EACd,aAAa;EACb,0BAA0B;EAC1B,mBAAmB,EAEpB;;ACJD;EACE,wBAAwB,EACzB","file":"app.css","sourcesContent":[".message {\n  border: 1px solid black;\n  border-radius: 5px;\n  padding: 15px;\n  margin: 10px;\n  box-shadow: 5px 2px 3px 0;\n  text-align: center;\n\n}\n\n","// @import \"node_modules/bootstrap-sass/assets/stylesheets/bootstrap\";\n\n@import \"jake.scss\";\n\n.message {\n  border: 1px solid black;\n}"],"sourceRoot":"/source/"}
+=======
+{"version":3,"sources":["jake.scss"],"names":[],"mappings":"AAAA;EACE,uBAAuB;EACvB,cAAc,EACf","file":"app.css","sourcesContent":[".post {\n  border: 1px solid grey;\n  padding: 15px;\n}\n"],"sourceRoot":"/source/"}
+>>>>>>> 0dbd4464766a2e3a27a6dd3245de214dee2ce910
