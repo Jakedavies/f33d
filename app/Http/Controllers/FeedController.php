@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use App\Feed;
+use Illuminate\Support\Facades\Auth;
 
 class FeedController extends Controller
 {
@@ -22,7 +24,9 @@ class FeedController extends Controller
     }
     //Better naming would be a good thing here
     public function make(){
-        return view('feed.createFeedPost');
+        $post = new Feed();
+        $post->user_id = Auth::user()->id;
+        return view('feed.createFeedPost', compact('post'));
     }
     public function delete(){
 
