@@ -28,11 +28,13 @@ class FeedController extends Controller
         $post->user_id = Auth::user()->id;
         return view('feed.createFeedPost', compact('post'));
     }
-    public function delete(){
 
-    }
-    public function create()
+    public function create(Request $request)
     {
+        $req = $request->all();
+        $post = new Feed($req);
+        $post->save();
+        return redirect('/feed');
 
     }
     public function index()
