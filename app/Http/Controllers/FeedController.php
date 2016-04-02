@@ -2,9 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
-use App\Http\Requests;
+use Illuminate\Http\Request as Nolan;
+use Request;
 use App\Feed;
 use Illuminate\Support\Facades\Auth;
 
@@ -28,10 +27,20 @@ class FeedController extends Controller
     }
     public function index()
     {
-        $feed = Feed::all();
-        return view('feed.index', ['feed' => $feed]);
+
+        if(Request::input('after')){
+            $feed = Feed::where('created_at', '>', Request::input('after'))->orderBy('created_at', 'DESC')->get();
+        } else {
+            $feed = Feed::orderBy('created_at', 'DESC')->get();
+        }
+        $view = view('feed.index', ['feed' => $feed]);
+        if(Request::ajax()) {
+            $sections = $view->renderSections();
+            return $sections['posts'];
+        }
+        return $view;
     }
-    public function create(Request $request)
+    public function create(Nolan $request)
     {
         $req = $request->all();
         $post = new Feed($req);

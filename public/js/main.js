@@ -1,8 +1,8 @@
 'use strict';
 
 function pollForPosts() {
-    var afterTime = $($('message')[0]).data('timestamp');
-
+    var afterTime = $($('.post')[0]).data('timestamp');
+    console.log(afterTime);
     $.ajax({
         type: 'GET',
         data: {
@@ -11,7 +11,12 @@ function pollForPosts() {
         url: '/feed',
         contentType: 'application/json'
     }).done(function (data) {
-        $('post-container').prepend(data);
+        $($('.post-container')[0]).prepend(data);
     });
 }
+$('document').ready(function () {
+    if ($('.post-container')[0]) {
+        setInterval(pollForPosts, 1000);
+    }
+});
 //# sourceMappingURL=main.js.map
