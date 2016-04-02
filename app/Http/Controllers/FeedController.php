@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Feed;
+use Illuminate\Support\Facades\Auth;
 
 class FeedController extends Controller
 {
@@ -23,19 +24,21 @@ class FeedController extends Controller
     }
     //Better naming would be a good thing here
     public function make(){
-        return view('feed.createFeedPost');
-    }
-    public function delete(){
-
-    }
-    public function create()
-    {
-
-        //
+        $post = new Feed();
+        $post->user_id = Auth::user()->id;
+        return view('feed.createFeedPost', compact('post'));
     }
     public function index()
     {
         $feed = Feed::all();
         return view('feed.index', ['feed' => $feed]);
+    }
+    public function create(Request $request)
+    {
+        $req = $request->all();
+        $post = new Feed($req);
+        $post->save();
+        return redirect('/feed');
+
     }
 }
