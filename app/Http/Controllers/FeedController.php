@@ -28,12 +28,16 @@ class FeedController extends Controller
     }
     public function index()
     {
-
         if(Request::input('after')){
-            $feed = Feed::where('created_at', '>', Request::input('after'))->orderBy('created_at', 'DESC')->get();
+            $feed = Feed::where('created_at', '>', Request::input('after'))->orderBy('created_at', 'DESC');
         } else {
-            $feed = Feed::orderBy('created_at', 'DESC')->get();
+            $feed = Feed::orderBy('created_at', 'DESC');
         }
+        
+        if(Request::input('tag')){
+          $feed = $feed->where('tag', 'like', Request::input('tag'));
+        }
+        $feed = $feed->get();
 
         $view = view('feed.index', ['feed' => $feed]);
         if(Request::ajax()) {
