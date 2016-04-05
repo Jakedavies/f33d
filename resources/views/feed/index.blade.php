@@ -1,5 +1,4 @@
 @extends('layouts.app')
-
 @section('posts')
     @foreach($feed as $post)
         <div class="post animated bounceInLeft" data-timestamp="{{$post->created_at}}">
@@ -18,6 +17,9 @@
 
 @section('content')
     <div class="container">
+        <div class="row" >
+          <input type="text" style="width: 75%; margin-left: 12%;" placeholder="Enter a tag" name="tag" id="tag"/>
+        </div>
         <div class="row post-container">
             @yield('posts')
         </div>
