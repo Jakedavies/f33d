@@ -19,8 +19,7 @@
     <link rel="stylesheet" href="{{ elixir('css/app.css') }}">
 
 
-    <link href='https://fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css'>
-
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 
 
 </head>

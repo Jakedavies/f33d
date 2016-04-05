@@ -14,7 +14,8 @@ input {
 
 .post {
   font-size: 50px;
-  padding: 50px; }
+  padding: 50px;
+  font-family: Ubuntu; }
 
 .post-container :nth-child(1n) {
   color: white;
@@ -31,9 +32,12 @@ input {
   background-color: #03B4E5;
   box-shadow: 10px 10px 10px; }
 
+.response-area p {
+  text-align: center; }
+
 .response-area {
   width: 60%;
-  margin-left: 15%; }
+  margin-left: 20%; }
 
 #nav-push {
   margin-top: 2vh; }
