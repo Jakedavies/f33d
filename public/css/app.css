@@ -1,13 +1,36 @@
-.message {
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 15px;
-  margin: 10px;
+.post {
+  width: 90%;
+  padding: 20px;
+  margin: 2% 5% 2% 5%;
   box-shadow: 5px 2px 3px 0;
   text-align: center; }
 
 .post {
-  border: 1px solid grey;
-  padding: 15px; }
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 50px; }
+
+.whitewash {
+  background-color: rgba(255, 255, 255, 0.7); }
+
+/* #####################################################################################*/
+/* #####################################################################################*/
+/* ###############                Offsets                                ###############*/
+/* ###############   (because we already position with classes)          ###############*/
+/* #####################################################################################*/
+/* #####################################################################################*/
+.vert-offset-1 {
+  margin-top: 10px; }
+
+.vert-offset-2 {
+  margin-top: 20px; }
+
+.vert-offset-3 {
+  margin-top: 30px; }
+
+.vert-offset-4 {
+  margin-top: 40px; }
+
+.vert-offset-5 {
+  margin-top: 50px; }
 
 /*# sourceMappingURL=app.css.map */

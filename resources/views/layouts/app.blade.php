@@ -13,17 +13,23 @@
 
     <!-- Styles -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ elixir('css/app.css') }}">
 
-    <style>
-        body {
-            font-family: 'Lato';
-        }
+    <link href='https://fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css'>
 
-        .fa-btn {
-            margin-right: 6px;
+    <style>
+        .post{
+            background-image: url({{asset('images/wall2.jpg')}}) ;
+            background-size: 100%;
+            height: 100%;
+
         }
     </style>
+
+
 </head>
 <body id="app-layout">
     <nav class="navbar navbar-default navbar-static-top">
