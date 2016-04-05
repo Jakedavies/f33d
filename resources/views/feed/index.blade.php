@@ -3,7 +3,15 @@
 @section('posts')
     @foreach($feed as $post)
         <div class="post animated bounceInLeft" data-timestamp="{{$post->created_at}}">
-            {{$post->message}}
+            <div class="left-side">
+                {{$post->message}}
+            </div>
+            <br>
+            <div class="right-side">
+                {{$post->likes}}
+            </div>
+            <small>Author: {{App\User::find($post->user_id)['name']}}</small>
+
         </div>
     @endforeach
 @endsection

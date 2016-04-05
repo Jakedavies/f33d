@@ -46,6 +46,8 @@ class FeedController extends Controller
     {
         $req = $request->all();
         $post = new Feed($req);
+        $post->user_id = Auth::user()->id;
+        $post->likes = 0;
         $post->save();
         return redirect('/feed');
 
