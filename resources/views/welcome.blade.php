@@ -1,7 +1,4 @@
 @extends('layouts.app')
-
-
-
 @section('content')
     <div class="text-center">
         <h1>Welcome to F33D</h1>
@@ -9,7 +6,7 @@
     <div class="container welcome">
         <hr/>
         <div>
-            <img class="img-center" src="http://publicdomainvectors.org/photos/flagfist_new.png">
+            <img class="img-center animated tada" src="http://publicdomainvectors.org/photos/flagfist_new.png">
             <h3>What is F33D?</h3>
             <p>
                 F33D is a movement. F33D aims to make the world a better place through ultra responsive live reloading message feeds.

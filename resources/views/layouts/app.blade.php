@@ -48,6 +48,8 @@
                     <li><a href="{{ url('/') }}">Home</a></li>
                     <li><a href="{{ url('/feed') }}">F33D</a></li>
                     <li><a href="{{ url('/feed/create') }}">Post Something</a></li>
+                    <li><a href="{{ url('/founders') }}">Founders</a></li>
+
                 </ul>
 
                 <!-- Right Side Of Navbar -->

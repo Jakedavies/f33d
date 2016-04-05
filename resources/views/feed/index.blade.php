@@ -7,9 +7,7 @@
                 {{$post->message}}
             </div>
             <br>
-            <div class="right-side">
-                {{$post->likes}}
-            </div>
+
             <small>Author: {{App\User::find($post->user_id)['name']}}</small>
 
         </div>

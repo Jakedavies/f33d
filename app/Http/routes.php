@@ -31,6 +31,10 @@ Route::get('/feed', 'FeedController@index');
 Route::get('/feed/create', 'FeedController@make');
 Route::post('/feed/create', 'FeedController@create');
 
+Route::get('founders', function(){
+    return View('founders.founders');
+});
+
 
 
 Route::get('/home', 'HomeController@index');
