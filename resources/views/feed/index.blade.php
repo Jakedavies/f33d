@@ -2,7 +2,7 @@
 
 @section('posts')
     @foreach($feed as $post)
-        <div class="post" data-timestamp="{{$post->created_at}}">
+        <div class="post animated bounceInLeft" data-timestamp="{{$post->created_at}}">
             {{$post->message}}
         </div>
     @endforeach

@@ -10,7 +10,7 @@ function pollForPosts() {
         url: '/feed',
         contentType: 'application/json'
     }).done(function(data) {
-        $($('.post-container')[0]).prepend(data);
+        $($('.post-container')[0]).prepend(data.addClass('animated bounceInLeft'));
     })
 }
 $('document').ready(function(){
@@ -18,3 +18,4 @@ $('document').ready(function(){
         setInterval(pollForPosts, 1000);
     }
 });
+

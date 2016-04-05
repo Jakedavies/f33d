@@ -1,8 +1,5 @@
 @foreach($feed as $post)
-    <div class="whitewash animatedParent">
-        <div class="post " data-timestamp="{{$post->created_at}}">
+        <div class="post animated bounceInLeft" id="{{$post->created_at}}" data-timestamp="{{$post->created_at}}">
                 {{$post->message}}
         </div>
-    </div>
-
 @endforeach
