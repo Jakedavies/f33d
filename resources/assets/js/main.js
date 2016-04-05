@@ -1,7 +1,6 @@
 
 function pollForPosts() {
     var afterTime = $($('.post')[0]).data('timestamp');
-    console.log(afterTime);
     $.ajax({
         type: 'GET',
         data: {
@@ -10,7 +9,7 @@ function pollForPosts() {
         url: '/feed',
         contentType: 'application/json'
     }).done(function(data) {
-        $($('.post-container')[0]).prepend(data.addClass('animated bounceInLeft'));
+        $($('.post-container')[0]).prepend(data);
     })
 }
 $('document').ready(function(){

@@ -2,7 +2,6 @@
 
 function pollForPosts() {
     var afterTime = $($('.post')[0]).data('timestamp');
-    console.log(afterTime);
     $.ajax({
         type: 'GET',
         data: {

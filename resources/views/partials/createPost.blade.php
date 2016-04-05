@@ -5,4 +5,4 @@
 {!! Form::label('tag', 'Tag') !!}
 {!! Form::text('tag', $post->tag, ['class' => 'form-control', 'id' => 'tag']) !!}
 
-{!! Form::submit('Submit', array('class' => 'btn btn-primary')) !!}
+{!! Form::submit('Shout it to the Universe!', array('class' => 'btn btn-primary')) !!}

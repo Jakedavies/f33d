@@ -34,7 +34,7 @@
 </head>
 <body id="app-layout">
     <nav class="navbar navbar-default navbar-static-top">
-        <div class="container">
+        <div id="nav-push" class="container">
             <div class="navbar-header">
 
                 <!-- Collapsed Hamburger -->

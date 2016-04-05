@@ -1,3 +1,82 @@
+.post {
+  width: 90%;
+  padding: 20px;
+  margin: 2% 5% 2% 5%;
+  box-shadow: 5px 2px 3px 0;
+  text-align: center; }
+
+.welcome div {
+  padding-top: 30px; }
+
+input {
+  margin: 10px;
+  padding: 15px; }
+
+.response-area {
+  width: 60%;
+  margin-left: 15%; }
+
+#nav-push {
+  margin-top: 2vh; }
+
+.btn-primary {
+  width: 100%;
+  padding: 10px;
+  box-shadow: 10px 10px 10px;
+  background-color: gray !important;
+  color: white; }
+
+.navbar-brand {
+  font-size: 40px; }
+
+.navbar-default .navbar-brand {
+  color: white;
+  font-weight: bold; }
+
+.navbar-default .navbar-brand a :hover {
+  color: white;
+  font-weight: bold;
+  font-size: 43px; }
+
+.navbar-default .navbar-nav > li > a {
+  color: white; }
+
+.navbar-default {
+  background-color: #03B4E5;
+  height: 10vh;
+  color: white !important; }
+
+.navbar-default a {
+  color: white; }
+
+.post {
+  font-family: 'Walter Turncoat', cursive;
+  font-size: 50px; }
+
+.whitewash {
+  background-color: rgba(255, 255, 255, 0.7); }
+
+/* #####################################################################################*/
+/* #####################################################################################*/
+/* ###############                Offsets                                ###############*/
+/* ###############   (because we already position with classes)          ###############*/
+/* #####################################################################################*/
+/* #####################################################################################*/
+.vert-offset-1 {
+  margin-top: 10px; }
+
+.vert-offset-2 {
+  margin-top: 20px; }
+
+.vert-offset-3 {
+  margin-top: 30px; }
+
+.vert-offset-4 {
+  margin-top: 40px; }
+
+.vert-offset-5 {
+  margin-top: 50px; }
+
 /*!
  * animate.css -http://daneden.me/animate
  * Version - 3.5.1
@@ -2363,43 +2442,5 @@
 .slideOutUp {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
-
-.post {
-  width: 90%;
-  padding: 20px;
-  margin: 2% 5% 2% 5%;
-  box-shadow: 5px 2px 3px 0;
-  text-align: center; }
-
-.welcome div {
-  padding-top: 30px; }
-
-.post {
-  font-family: 'Walter Turncoat', cursive;
-  font-size: 50px; }
-
-.whitewash {
-  background-color: rgba(255, 255, 255, 0.7); }
-
-/* #####################################################################################*/
-/* #####################################################################################*/
-/* ###############                Offsets                                ###############*/
-/* ###############   (because we already position with classes)          ###############*/
-/* #####################################################################################*/
-/* #####################################################################################*/
-.vert-offset-1 {
-  margin-top: 10px; }
-
-.vert-offset-2 {
-  margin-top: 20px; }
-
-.vert-offset-3 {
-  margin-top: 30px; }
-
-.vert-offset-4 {
-  margin-top: 40px; }
-
-.vert-offset-5 {
-  margin-top: 50px; }
 
 /*# sourceMappingURL=app.css.map */
