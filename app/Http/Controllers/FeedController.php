@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request as Nolan;
 use Request;
 use App\Feed;
@@ -33,6 +34,7 @@ class FeedController extends Controller
         } else {
             $feed = Feed::orderBy('created_at', 'DESC')->get();
         }
+
         $view = view('feed.index', ['feed' => $feed]);
         if(Request::ajax()) {
             $sections = $view->renderSections();

@@ -21,14 +21,6 @@
 
     <link href='https://fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css'>
 
-    <style>
-        .post{
-            background-image: url({{asset('images/wall2.jpg')}}) ;
-            background-size: 100%;
-            height: 100%;
-
-        }
-    </style>
 
 
 </head>

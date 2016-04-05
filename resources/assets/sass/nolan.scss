@@ -3,6 +3,29 @@ input{
   padding: 15px;
 }
 
+.post{
+  font-size: 50px;
+  padding: 50px;
+}
+.post-container :nth-child(1n){
+  color: white;
+  background-color: #FF8100;
+  box-shadow: 10px 10px 10px;
+
+}
+.post-container :nth-child(2n){
+  color: white;
+  background-color: #F70053;
+  box-shadow: 10px 10px 10px;
+}
+
+.post-container :nth-child(3n){
+  color: white;
+  background-color: #03B4E5;
+  box-shadow: 10px 10px 10px;
+
+}
+
 .response-area{
   width: 60%;
   margin-left: 15%;
@@ -42,11 +65,7 @@ input{
 .navbar-default a{
   color: white;
 }
-.post{
-  font-family: 'Walter Turncoat', cursive;
-  font-size: 50px;
 
-}
 .whitewash{
   background-color: rgba(255, 255, 255, 0.7);
 }
